@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculadora en Vue</title>
+	<script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+	<div id="app">
+		<h1>{{ title }}</h1>
+		<hr>
+
+		<form>
+			<label for="numeroUno">Número 1: <input type="number" name="numeroUno" v-model.number="n1"></label>
+			<br><br>
+			<label for="numeroDos">Número 2: <input type="number" name="numeroDos" v-model.number="n2"></label>
+		</form>
+		<hr>
+
+		<p>Suma: {{ suma }}</p>
+		<p>Resta: {{ resta }}</p>
+		<p>Multiplicar: {{ multiplicar }}</p>
+		<p>Dividir: {{ dividir }}</p>
+
+	</div>
+
+	
+
+
+	<script src="js/main.js"></script>
+	<script src="js/mountApp.js"></script>
+</body>
+</html>
